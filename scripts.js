@@ -44,7 +44,7 @@ function openTab(tabId) {
 }
 
 /* pop up button */
-document.getElementById("popupBtn").addEventListener("click", function myComment() {
+document.getElementById("popupBtn").addEventListener("click", function() {
   alert ("Hello Stephen! We really appreciated your class this semester, we learned a ton and you were a great instructor :) Best of luck with future endeavors and hopefully see you around campus!");
 });
 
