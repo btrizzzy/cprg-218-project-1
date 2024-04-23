@@ -113,7 +113,6 @@ nav li a:hover {
 .containerTab {
   position: relative;
   padding: 20px;
-
 }
 
 .closebtn {
@@ -144,7 +143,7 @@ nav li a:hover {
   grid-template-areas:
   "pals pals countdown countdown"
   "pals pals countdown countdown"
-  "copyright copyright copyright copyright";
+  "column column column";
   margin-top: 1rem;
   left: 0;
   bottom: 0;
@@ -162,12 +161,6 @@ nav li a:hover {
   grid-area: countdown;
 }
 
-.copyright {
-  grid-area: copyright;
-  padding: 0 1rem;
-
-}
-
 /* Content */
 .column {
   width: 33.33%;
@@ -180,7 +173,6 @@ nav li a:hover {
 .containerTab {
   padding: 5rem;
   color: white;
-
 }
 
 .row:after {

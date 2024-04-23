@@ -48,9 +48,3 @@ document.getElementById("popupBtn").addEventListener("click", function myComment
   alert ("Hello Stephen! We really appreciated your class this semester, we learned a ton and you were a great instructor :) Best of luck with future endeavors and hopefully see you around campus!");
 });
 
-/* Changing Copyright Year */
-const currentYear = document.getElementById('currentyear');
-const date = new Date();
-const year = date.getFullYear();
-
-currentYear.innerHTML = `&copy; ${year} Briana Truong. All rights reserved.`;
