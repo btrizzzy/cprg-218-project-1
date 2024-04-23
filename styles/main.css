@@ -206,6 +206,7 @@ nav li a:hover {
 
 /* Accordion */
 .container {
+  margin: 1rem auto;
   padding: 1.5rem;
   position: relative;
 }
@@ -225,6 +226,8 @@ nav li a:hover {
 }
 
 .panel {
+  padding: 0 18px;
+  background-color: white;
   display: none;
   overflow: hidden;
 }
@@ -232,8 +235,6 @@ nav li a:hover {
 .material-symbols-outlined {
   vertical-align: text-top;
 }
-
-
 
 
 /* Media queries for responsiveness */
@@ -251,12 +252,6 @@ nav li a:hover {
     font-size: 8vw;
   }
 
-  .button {
-    font-size: 5vw;
-    min-width: 1rem;
-    padding: 0 20px;
-  }
-  
   .footer {
     padding: 2rem;
     display: flex;
@@ -272,11 +267,6 @@ nav li a:hover {
     flex-wrap: wrap;
   }
 
-  .button {
-    font-size: 3.5vw;
-    min-width: 1.5rem;
-    padding: 0 25px;
-  }
   .footer {
     padding: 1rem;
     display: flex;

@@ -16,11 +16,8 @@ acc.forEach(button => {
 
 /* countdown */
 var countdownDate = new Date("Jul 12, 2024 0:0:0").getTime();
-
 var x = setInterval(function() {
-
 const now = new Date().getTime();
-
 var distance = countdownDate - now;
 
 const days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -44,7 +41,7 @@ function openTab(tabId) {
 }
 
 /* pop up button */
-document.getElementById("popupBtn").addEventListener("click", function() {
+document.getElementById('popupBtn').addEventListener("click", function myComment() {
   alert ("Hello Stephen! We really appreciated your class this semester, we learned a ton and you were a great instructor :) Best of luck with future endeavors and hopefully see you around campus!");
 });
 
