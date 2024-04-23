@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <a href="" class="skip">Skip to Main</a>
+  <a href="#events" class="skip">Skip to Main</a>
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Style Sheets-->
-  <link rel="stylesheet" type="text/css" href="/styles/fonts.css">
-  <link rel="stylesheet" type="text/css" href="/styles/main.css">
-  <script async src="/scripts.js"></script> 
+  <link rel="stylesheet" type="text/css" href="styles/fonts.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <script async src="scripts.js"></script> 
   <!--Google Fonts-->
-  
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
   <!--Icons-->
 
 
   <title>fund the portugal pals</title>
 </head>
+
+  <!--Hero Banner-->
+<header class="hero-container" role="banner">
+  <div class="hero-image">
+    <img src="assets/plane.jpg" alt="view of airplane wing and moutain landscape from inside">
+</div>
+    <div class="hero-text">
+      <h1>pls help send us there</h1>
+    </div>
   <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="fundraiser.html">Donate</a></li>
+        <li><a href="fundraiser.html">Fundraisers</a></li>
     </ul>
     </nav>
-    <h1>pls help send us there</h1>
-</head>
+</header>
+
+
 
 <body>
-  <section class="container" aria-label="faq-list" role="contentinfo">
-    <h3 id="events">Fundraising Events</h3>
+  <section class="container" aria-label="fundraising" role="contentinfo">
+    <h2 class="red-title" id="events">Fundraising Events</h2>
     
-    <button class="accordion">Garage Sales</button>
+    <button class="accordion" id="garage-sales">Garage Sales</button>
     <div class="panel">
-      <p class="paragraph">we'll be hosting </p>
+      <p class="paragraph">it's a win-win because we're hoarders that need to get rid of stuff</p>
     </div>
   
-    <button class="accordion">Twitch Streams</button>
+    <button class="accordion" id="twitch-streams">Twitch Streams</button>
     <div class="panel">
-      <p class="paragraph">catch us on twitch playing games </p>
+      <p class="paragraph">another win-win because we currently play games for free</p>
     </div>
   
-    <button class="accordion">GoFundMe</button>
+    <button class="accordion" id="gofundme">GoFundMe</button>
     <div class="panel">
-      <p class="paragraph">classic old 'send us money' route</p>
+      <p class="paragraph">finally, just the classic old 'send us $$$ money $$$' route (pls)</p>
     </div>
   </section>
 

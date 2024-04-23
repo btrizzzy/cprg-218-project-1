@@ -1,4 +1,4 @@
-/* Accordion Buttons */
+/* accordion */
 const acc = document.querySelectorAll(".accordion");
 
 acc.forEach(button => {
@@ -13,18 +13,8 @@ acc.forEach(button => {
   });
 });
 
-/* Blog Posts */
-// Hide all elements with class="containerTab", except for the one that matches the clickable grid column
-function openTab(tabName) {
-    var i, x;
-    x = document.getElementsByClassName("containerTab");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    document.getElementById(tabName).style.display = "block";
-}
 
-/* Countdown */
+/* countdown */
 var countdownDate = new Date("Jul 12, 2024 0:0:0").getTime();
 
 var x = setInterval(function() {
@@ -53,10 +43,7 @@ function openTab(tabId) {
     document.getElementById(tabId).style.display = "block";
 }
 
-/* Thanks */
-
-
-
+/* pop up button */
 document.getElementById("popupBtn").addEventListener("click", function myComment() {
   alert ("Hello Stephen! We really appreciated your class this semester, we learned a ton and you were a great instructor :) Best of luck with future endeavors and hopefully see you around campus!");
 });
