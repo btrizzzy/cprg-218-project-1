@@ -157,9 +157,7 @@ nav li a:hover {
 .footer {
   display: grid;
   grid-template-areas:
-  "column countdown column"
-  "colum countdown column"
-  "column button column";
+  "column1 countdown column2";
   margin-top: 1rem;
   left: 0;
   bottom: 0;
@@ -169,7 +167,7 @@ nav li a:hover {
 }
 
 .footer-left {
-  grid-area: button;
+  grid-area: column1;
 }
 
 .footer-right {
@@ -236,6 +234,37 @@ nav li a:hover {
   vertical-align: text-top;
 }
 
+.button-1 {
+  background-color: #fbeee0;
+  border: 2px solid #6d5636;
+  border-radius: 30px;
+  box-shadow: #6d5636 4px 4px 0 0;
+  color: #6d5636;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0 15px;
+  line-height: 3rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button-1:hover {
+  background-color: #fff;
+}
+
+.button-1:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
 
 /* Media queries for responsiveness */
 @media screen and (max-width: 600px) {
