@@ -11,7 +11,9 @@
   <link rel="stylesheet" type="text/css" href="/styles/main.css">
   <script async src="/scripts.js"></script> 
   <!--Google Fonts-->
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
 
   <!--Icons-->
 
@@ -20,54 +22,74 @@
 </head>
 
 </head>
-<ul>
-    <li><a href="">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="fundraiser.html">Donate</a></li>
-    <li><a href="contact.html">Contact</a></li>
-</ul>
+
 
 <body>
-    <!--Hero Banner-->
-    <header class="hero-container" id="top" role="banner">
-        <img class="hero-image" src="assets/" alt="">
-      <div class="hero-text" >
-        <h1 id="top">porto-licious journey</h1><br>
-        <a class="button" href=""></a>
-        <h3>countdown til EIA</h3>
-      </div>
+
+    <header role="banner">
+        <!--Hero Banner-->
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="/assets/PORTO.jpg" alt="riverfront of porto, portugal">
+            </div>
+            <div class="hero-text">
+                <h1 id="top">porto-licious journey</h1>
+                <h3>weather in porto</h3>
+            </div>
+        </div>
+        <!--Nav Bar-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="fundraiser.html">Donate</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!--Content-->
-    <section class="container accordion-container" aria-label="faq-list" role="contentinfo">
-        <h3 id="faq">FAQs</h3>
-        
-        <button class="accordion">Are y'all good?</button>
-        <div class="panel">
-          <p class="paragraph">Yes...</p>
-        </div>
-      
-        <button class="accordion">Are y'all expensive?</button>
-        <div class="panel">
-          <p class="paragraph">No...</p>
-        </div>
-      
-        <button class="accordion">Can I eat these all the time?</button>
-        <div class="panel">
-          <p class="paragraph">Of course...</p>
-        </div>
-      </section>
+    <div id="blog-posts" class="posts-container">
+        <div class="post" onclick="openTab('b1');" id="post-1">Box 1</div>
+        <div class="post" onclick="openTab('b2');" id="post-2">Box 2</div>
+        <div class="post" onclick="openTab('b3');" id="post-3">Box 3</div>
+    </div>
+    
+    <div id="b1" class="containerTab" style="display:none">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Pre-Departure: Quirky Quests</h2>
+        <h4>date dd/mm/yyy</h4>
+        <p>contents of the day</p>
+    </div>
+    
+    <div id="b2" class="containerTab" style="display:none;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Departure: Airport Adventures</h2>
+        <h4>date dd/mm/yyy</h4>
+        <p>contents of the day</p>
+    </div>
+    
+    <div id="b3" class="containerTab" style="display:none;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Arrival: Porto-licious Procession</h2>
+        <h4>date dd/mm/yyy</h4>
+        <p>contents of the day</p>
+    </div>
+    
       
 
 <footer class="footer" role="contentinfo">
-    <div class="footer-left">
-        <h3>portugal pals</h3>
+    <div>
+        <h4>portugal pals</h4>
         <p>just your average young adults wanting to travel and experience life :)</p>
-        </div>
-
-        <div class="copyright">
-            <p id="currentyear"></p>
-        </div>
+    </div>
+    <div>
+        <h5>countdown til EIA</h5>
+        <p id="countdown"></p>
+    </div>
+    <div class="copyright">
+        <p id="currentyear"></p>
+    </div>
     </footer>
     
 </body>
+</html>
