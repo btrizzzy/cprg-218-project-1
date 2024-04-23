@@ -29,18 +29,19 @@ var countdownDate = new Date("Jul 12, 2024 0:0:0").getTime();
 
 var x = setInterval(function() {
 
-var now = new Date().getTime();
+const now = new Date().getTime();
 
 var distance = countdownDate - now;
 
-var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 const countdown = document.getElementById('countdown');
-countdown.innerHTML = days + "d " + hours + "h "
-+ minutes + "m " + seconds + "s ";
+days.innerHTML = days 
+countdown.innerHTML = days + " DAYS " + hours + " HOURS "
++ minutes + " MINUTES " + seconds + " SECONDS ";
 }, 1000);
 
 /* blog posts */
@@ -52,6 +53,13 @@ function openTab(tabId) {
     document.getElementById(tabId).style.display = "block";
 }
 
+/* Thanks */
+
+
+
+document.getElementById("popupBtn").addEventListener("click", function myComment() {
+  alert ("Hello Stephen! We really appreciated your class this semester, we learned a ton and you were a great instructor :) Best of luck with future endeavors and hopefully see you around campus!");
+});
 
 /* Changing Copyright Year */
 const currentYear = document.getElementById('currentyear');
