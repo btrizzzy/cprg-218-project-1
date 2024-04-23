@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <a href="" class="skip">Skip to Main</a>
+  <a href="#blog-posts" class="skip">Skip to Main</a>
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Style Sheets-->
-  <link rel="stylesheet" type="text/css" href="/styles/fonts.css">
-  <link rel="stylesheet" type="text/css" href="/styles/main.css">
-  <script async src="/scripts.js"></script> 
+  <link rel="stylesheet" type="text/css" href="styles/fonts.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <script async src="scripts.js"></script> 
   <!--Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
 
   <!--Icons-->
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   <title>portugal pals</title>
 </head>
@@ -30,11 +30,10 @@
         <!--Hero Banner-->
         <div class="hero-container">
             <div class="hero-image">
-                <img src="/assets/PORTO.jpg" alt="riverfront of porto, portugal">
+                <img src="assets/PORTO.jpg" alt="riverfront of porto, portugal">
             </div>
             <div class="hero-text">
-                <h1 id="top">porto-licious journey</h1>
-                <h3>weather in porto</h3>
+                <h1 id="top">Porto-licious Journey</h1>
             </div>
         </div>
         <!--Nav Bar-->
@@ -42,48 +41,62 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="fundraiser.html">Donate</a></li>
+                <li><a href="fundraiser.html">Fundraisers</a></li>
             </ul>
         </nav>
     </header>
 
     <!--Content-->
+    <div id="intro" class="about-container">
+        <p>Hi, my name is Briana :)
+            <br>
+            This is a blog dedicated to the stories of 10 SAIT IDD 
+            students travelling across the world to learn this July 2024! 
+            <br>
+            Follow along to make sure you don't miss anything!
+        </p>
+    </div>
+    <h2 class="red-title">Blog Posts in Question</h2>
     <div id="blog-posts" class="posts-container">
-        <div class="post" onclick="openTab('b1');" id="post-1">Box 1</div>
-        <div class="post" onclick="openTab('b2');" id="post-2">Box 2</div>
-        <div class="post" onclick="openTab('b3');" id="post-3">Box 3</div>
+        <div class="post" onclick="openTab('b1');" id="post-1">Entry #1</div>
+        <div class="post" onclick="openTab('b2');" id="post-2">Entry #2</div>
+        <div class="post" onclick="openTab('b3');" id="post-3">Entry #3</div>
     </div>
     
     <div id="b1" class="containerTab" style="display:none">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <span onclick="this.parentElement.style.display='none'" class="closebtn"><i class="material-symbols-outlined">
+            close
+        </i></span>
         <h2>Pre-Departure: Quirky Quests</h2>
-        <h4>date dd/mm/yyy</h4>
-        <p>contents of the day</p>
+        <h4>Date: dd/mm/yyy</h4>
+        <p>- insert contents of the day -</p>
     </div>
     
     <div id="b2" class="containerTab" style="display:none;">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <span onclick="this.parentElement.style.display='none'" class="closebtn"><i class="material-symbols-outlined">
+            close
+        </i></span>
         <h2>Departure: Airport Adventures</h2>
-        <h4>date dd/mm/yyy</h4>
-        <p>contents of the day</p>
+        <h4>Date: dd/mm/yyy</h4>
+        <p>- insert contents of the day -</p>
     </div>
     
     <div id="b3" class="containerTab" style="display:none;">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <span onclick="this.parentElement.style.display='none'" class="closebtn"><i class="material-symbols-outlined">
+            close
+        </i></span>
         <h2>Arrival: Porto-licious Procession</h2>
-        <h4>date dd/mm/yyy</h4>
-        <p>contents of the day</p>
+        <h4>Date: dd/mm/yyy</h4>
+        <p>- insert contents of the day -</p>
     </div>
     
       
-
 <footer class="footer" role="contentinfo">
-    <div>
-        <h4>portugal pals</h4>
-        <p>just your average young adults wanting to travel and experience life :)</p>
+    <div class="footer-left">
+        <button class="button" type="button">Click Here</button>
     </div>
-    <div>
-        <h5>countdown til EIA</h5>
+    <div class="footer-right">
+        <h2>Countdown Begins!</h2>
         <p id="countdown"></p>
     </div>
     <div class="copyright">
